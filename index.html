@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Expense Sharing App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <center><div id="ee"> <h1>Welcome to the Prototype ~ Expenses Sharing Application</h1></div></center>
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="login()">Login</button>
+        <p>New user? <a href="signup.html">Sign up</a></p>
+    </div>
+    <script>
+        function login() {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>

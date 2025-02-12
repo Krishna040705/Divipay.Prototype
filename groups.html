@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups - Expense Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Expense Sharing App</h1>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="add_expense.html">Add Expense</a></li>
+            <li><a href="settle_up.html">Settle Up</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Create a Group</h2>
+        <input type="text" id="group-name" placeholder="Enter group name">
+        
+        <h3>Add Members</h3>
+        <div class="toggle-buttons">
+            <button onclick="toggleInput('email')">Add by Email</button>
+            <button onclick="toggleInput('phone')">Add by Phone</button>
+        </div>
+        
+        <input type="text" id="member-input" placeholder="Enter email or phone number">
+        <button onclick="addMember()">Add Member</button>
+        
+        <h4>Group Members</h4>
+        <ul id="member-list"></ul>
+        
+        <button onclick="createGroup()">Create Group</button>
+
+        <h3>Your Groups</h3>
+        <ul id="group-list"></ul>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

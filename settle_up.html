@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settle Up - Expense Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Expense Sharing App</h1>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="add_expense.html">Add Expense</a></li>
+            <li><a href="settle_up.html">Settle Up</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Settle Up</h2>
+        <input type="text" id="payer" placeholder="Who is paying?">
+        <input type="text" id="receiver" placeholder="Who is receiving?">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="settleUp()">Settle</button>
+        
+        <h3>Settled Payments</h3>
+        <ul id="settled-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Expense Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Expense Sharing App</h1>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="add_expense.html">Add Expense</a></li>
+            <li><a href="settle_up.html">Settle Up</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Add an Expense</h2>
+
+        <!-- Select Group Dropdown -->
+        <label for="group-select">Select Group:</label>
+        <select id="group-select" onchange="loadGroupMembers()">
+            <option value="">-- Select Group --</option>
+        </select>
+
+        <!-- Expense Details -->
+        <input type="text" id="description" placeholder="Expense description">
+        <input type="number" id="amount" placeholder="Amount">
+        <input type="text" id="payer" placeholder="Paid by">
+
+        <!-- Split Among Members -->
+        <h3>Split Among:</h3>
+        <div id="member-list"></div>
+
+        <button onclick="addExpense()">Add Expense</button>
+        
+        <h3>Expense List</h3>
+        <ul id="expense-list"></ul>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
